@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#root,
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  /* width: 100%; */
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  /* align-self: flex-start; */
+  width: 100%;
+  height: 20%;
+  background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-03/1614762761_80-p-derevyannii-fon-153.jpg");
+  border-bottom: 5px solid black;
+  box-shadow: 0px 31px 9px 0px rgba(67, 66, 64, 0.31);
+  justify-content: space-between;
+}
+
+.header__title {
+  font-family: "Palette Mosaic", cursive;
+  font-size: 40px;
+  text-shadow: 1px 1px 2px black, 0 0 1em white;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.header__pages__content,
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-self: end;
+  align-items: center;
+}
+
+.header__page {
+  /* font-family: 'Palette Mosaic', cursive;
+  font-family: 'Press Start 2P', cursive; */
+
+  /* первый вариант и второй вариант шрифтов */
+
+  /* font-family: 'Palette Mosaic', cursive;
+  font-family: 'Press Start 2P', cursive;
+  font-family: 'Special Elite', cursive; */
+
+  /* третий вариант */
+
+  font-family: "Cuprum", sans-serif;
+
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 1em black;
+  transition: all linear 0.2s;
+}
+
+.header__page:hover {
+  color: black;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  height: 80%;
+  background: radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(
+      45deg,
+      transparent 74px,
+      transparent 75px,
+      #a4a4a4 75px,
+      #a4a4a4 76px,
+      transparent 77px,
+      transparent 109px
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 75px,
+      transparent 76px,
+      #a4a4a4 76px,
+      #a4a4a4 77px,
+      transparent 78px,
+      transparent 109px
+    ),
+    #fff;
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg,
+  #navbar {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}

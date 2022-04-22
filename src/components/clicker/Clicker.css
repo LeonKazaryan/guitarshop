@@ -1,0 +1,69 @@
+.clicker-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* overflow: hidden; */
+  overflow-y: scroll;
+  align-items: center;
+}
+
+.clicker-text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+}
+
+.clicker-text-title {
+  font-family: "Cuprum", sans-serif;
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+.clicker-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.clicker-content-image-container {
+  width: 600px;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid black; */
+}
+
+.clicker-content-image {
+  width: 560px;
+
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.1s linear;
+}
+
+.clicker-content-image:active {
+  width: 550px;
+}
+
+.upgrade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.upgrade-information {
+  text-align: center;
+  align-self: center;
+}
+
+.err-msg {
+  color: red;
+  text-shadow: 0px 0px 16px rgba(202, 0, 0, 1);
+  font-family: "Cuprum", sans-serif;
+  font-family: "Rubik Mono One", sans-serif;
+  font-size: 10px;
+  padding-top: 4px;
+}
